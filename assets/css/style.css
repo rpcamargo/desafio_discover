@@ -148,16 +148,6 @@ body {
 }
 
 
-
-
-
-
-
-
-
-
-
-
 .home--right--background {
     width: 100%;
     position: relative;
@@ -202,4 +192,35 @@ body {
     color: #a488ef;
     font-weight: 600;
     font-size: 1rem;
+}
+
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+    margin-top: 50px;
+}
+.details--area {
+    display: flex;
+    height: inherit;
+}
+.details--number {
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+.details--number-item {
+    color: var(--cor-primaria);
+    font-size: 2.5rem;
+}
+.details--number-text {
+    color: var(--cor-secundaria);
+}
+
+.details--text {
+    color: var(--cor-primaria);
 }
