@@ -343,6 +343,9 @@ body {
     align-items: center;
     border-radius: 20px;
 }
+.collection--cards-item a {
+    text-decoration: none;
+}
 .cards--img {
     height: 200px;
     width: 200px;
