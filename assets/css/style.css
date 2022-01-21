@@ -8,6 +8,7 @@
     --bg-gradient-body:linear-gradient(to right, #242134, #3f386b );
     --bg-gradient-second:linear-gradient(to right, #4451c3, #a488ef);
     --bg-gradient-second-inverso:linear-gradient(to right,#a488ef, #4451c3);
+    --font-size-title: 2.5rem;
 }
 body {
     background-image: var(--bg-gradient-body);
@@ -29,11 +30,20 @@ body {
     border-radius: 50px;
     background-image: var(--bg-gradient-second-inverso);
     margin-right: 20px;
+    cursor: pointer;
 }
 .button-empty {
+    background-color: transparent;
     color: var(--cor-secundaria);
     background-image: none;
     border: 2px solid #c1c1c1;
+    cursor: pointer;
+}
+.button--filter {
+    font-size: 1rem;
+    padding: 20px 30px;
+    cursor: pointer;
+    margin: 0;
 }
 
 
@@ -128,7 +138,7 @@ body {
 }
 .text-title {
     color: var(--cor-primaria);
-    font-size: 2.5rem;
+    font-size: var(--font-size-title);
     font-weight: 400;
     line-height: 3rem;
     margin-bottom: 20px;
@@ -195,32 +205,157 @@ body {
 }
 
 
-.details {
-    display: flex;
-    justify-content: space-between;
+.details {    
     height: 100px;
     align-items: center;
     margin-top: 50px;
 }
 .details--area {
     display: flex;
+    justify-content: space-between;
     height: inherit;
+    width: 450px;
 }
 .details--number {
     height: inherit;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 0 30px;
 }
 .details--number-item {
     color: var(--cor-primaria);
-    font-size: 2.5rem;
+    font-size: var(--font-size-title);
+    font-weight: 400;
 }
 .details--number-text {
     color: var(--cor-secundaria);
+    font-size: 1rem;
 }
 
 .details--text {
     color: var(--cor-primaria);
+    text-align: right;
+}
+
+
+/*.collection {
+    margin-top: 50px;
+}
+.collection--top {
+    display: flex;
+    justify-content: space-between;
+}
+.collection--top-left {
+    color: var(--cor-primaria);
+    font-size: var(--font-size-title)
+}
+.collection--top-right {
+
+}
+.collection--filter-drop {
+
+}
+.filter-drop--content {
+    display: none;
+}
+.drop--item {
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    color: var(--cor-primaria);
+}
+.drop--item:hover {
+    background-color: var(--cor-secundaria);
+    border-radius: 20px;
+}
+.collection--top-right:hover .filter-drop--content{
+    display: block;
+}
+
+.grid--collection {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 100px 100px 100px;
+}
+.collection--cards {
+    background-color: violet;
+}*/
+
+.collection {
+    margin-top: 50px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas: 
+    "collect_text filter_drop"
+    "cards cards"
+    ;
+}
+.collection--text {
+    grid-area: collect_text;
+    color: var(--cor-primaria);
+    font-size: var(--font-size-title)
+}
+.collection--filter-drop {
+    grid-area: filter_drop;
+    position: relative;
+    justify-self: end;
+}
+.collection--cards {
+    grid-area: cards;
+    display: flex;
+    justify-content: space-evenly;
+}
+.item {
+}
+.filter-drop--content {
+    display: none;
+    position: absolute;
+    width: 100px;
+}
+.drop--item {
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    color: var(--cor-primaria);
+}
+.drop--item:hover {
+    background-color: var(--cor-secundaria);
+    border-radius: 20px;
+}
+.collection--filter-drop:hover .filter-drop--content{
+    display: block;
+}
+
+.collection--cards-item {
+    height: 300px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+}
+.cards--img {
+    height: 200px;
+    width: 200px;
+    padding: 10px;
+}
+.cards-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+.button-cards {
+    margin: 10px;
+    padding: 10px 20px;
+    color: var(--cor-primaria);
+    border-radius: 20px;
+    background-image: var(--bg-gradient-second-inverso);
+    border: none;
+    cursor: pointer;
+}
+.button-cards-empty {
+    background-color: transparent;
+    color: var(--cor-secundaria);
+    background-image: none;
+    border: 2px solid #c1c1c1;
+    cursor: pointer;
 }
