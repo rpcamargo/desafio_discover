@@ -10,6 +10,22 @@
     --bg-gradient-second-inverso:linear-gradient(to right,#a488ef, #4451c3);
     --font-size-title: 2.5rem;
 }
+.dark-mode:root {
+    --cor-secundaria: #d1d1d6;
+    --cor-primaria: #a9a9ac;
+    --bg-gradient-body:linear-gradient(to right, #0a0a0a, #333336 );
+    --bg-gradient-second:linear-gradient(to right, #3a3d53, #5e5870);
+    --bg-gradient-second-inverso:linear-gradient(to right,#5a4b83, #1d2252);
+    --font-size-title: 2.5rem;
+}
+.dark-mode img {
+    opacity: 0.8;
+}
+
+.button-mode {
+    padding: 10px;
+    border-radius: 20px;
+}
 body {
     background-image: var(--bg-gradient-body);
     background-repeat: no-repeat;
@@ -310,6 +326,7 @@ body {
     grid-area: filter_drop;
     position: relative;
     justify-self: end;
+     
 }
 .collection--cards {
     grid-area: cards;
@@ -319,20 +336,22 @@ body {
 .filter-drop--content {
     display: none;
     position: absolute;
-    width: 100px;
+    width: 100%;
+    background-image: var(--bg-gradient-second-inverso);
+    border-radius: 20px;
+    padding: 0;
 }
 .drop--item {
+    text-align: center;
     padding: 10px;
     display: block;
     text-decoration: none;
-    color: var(--cor-primaria);
+    color: var(--cor-primaria); 
 }
 .drop--item:hover {
     background-color: var(--cor-secundaria);
     border-radius: 20px;
-}
-.collection--filter-drop:hover .filter-drop--content{
-    display: block;
+    color: var(--cor-primaria);
 }
 
 .collection--cards-item {
@@ -396,7 +415,10 @@ body {
         padding: 15px 40px;
     }
     
-    
+    .button-mode {
+        padding: 0;
+        width: 80px;
+    }
 }
 
 @media (max-width:768px) {
@@ -416,6 +438,10 @@ body {
     }
     .text-second {
         font-size: 0.9rem;
+    }
+    .button-mode {
+        padding: 0;
+        width: 80px;
     }
 }
 
@@ -495,6 +521,11 @@ body {
     .cards--img {
         height: 70%;
     }
+
+    .button-mode {
+        padding: 0;
+        width: 80px;
+    }
 }
 
 @media (max-width:486px) {
@@ -509,6 +540,9 @@ body {
     }
     .details--area {
         width: 80%;
+    }
+    .button-mode {
+        width: 80px;
     }
 }
 
@@ -527,6 +561,10 @@ body {
     .button {
         padding: 10px;
         text-align: center;
+    }
+    .button-mode {
+
+        width: 80px;
     }
 }
 /*@media (max-width: 1140px) {

@@ -30,6 +30,7 @@
                         </ul>
                     </nav>
                 </div>
+                <button id="dark-mode" class="button-empty button-mode" onclick="theme()" value="Modo Escuro" type="button">Modo escuro</button>
                 <div class="header--user">
                     <a href="" >
                         <img class="foto-user" src="/assets/images/foto-user.jpg" alt="Foto do usuário">
@@ -85,8 +86,8 @@
     <section class="container collection--grid">
         <div class="collection--text item">Rare Collection &#x1F525;</div>
         <div class="collection--filter-drop">
-            <button class="button button-empty button--filter">All Items &#709;</button>
-                   <div class="filter-drop--content">
+            <button class="button button-empty button--filter"  id="menu--user" onclick="exibirMenu()">All Items &#709;</button>
+                   <div id="menu" class="filter-drop--content">
                        <a href="" class="drop--item">Item 1</a>
                        <a href="" class="drop--item">Item 2</a>
                        <a href="" class="drop--item">Item 3</a>
@@ -101,7 +102,7 @@
                 </div>
             </div>
             <div class="collection--cards-item">
-                <img class="cards--img" src="/assets/images/robot.png" alt="">
+                <img class="cards--img dark-mode" src="/assets/images/robot.png" alt="">
                 <div class="cards-buttons">
                     <a class="button-cards" href="/assets/images/robot.png" download="Robo">Download</a>
                     <button class="button-cards button-cards-empty">Favoritar</button>
