@@ -18,13 +18,13 @@ Este é um projeto que tive acesso ao layout e como desafio deveria:
 ## Layout
 
 <div align="center" >
-  <img src="./github/Projeto Discover - Layout" alt="Layout - Projeto Discover" height="425">
+  <img src="./github/Projeto Discover - Layout.jpeg" alt="Layout - Projeto Discover" height="425">
 </div>
 
 ## Resultado do projeto
 
 <div align="center" >
-  <img src="./github/projeto-gif" alt="Projeto em GIF" height="425">
+  <img src="./github/projeto-gif.gif" alt="Projeto em GIF" height="425">
 </div>
 
 ## Tecnologias utilizadas
