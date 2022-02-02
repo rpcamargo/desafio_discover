@@ -36,7 +36,13 @@ Este é um projeto que tive acesso ao layout e como desafio deveria:
   </div>
 
 
-### Link do projeto hospedado no [Netlify](https://www.netlify.com/):
+## Link do projeto hospedado no [Netlify](https://www.netlify.com/):
 
 [Projeto Discover](https://desafio-discover.netlify.app/)
+
+## Estatística utilizando a ferramenta Lighthouse do navegador Google Chrome
+
+<div align="center" >
+  <img src="./github/lighthouse.jpg" alt="Estatística com Lighthouse" height="425">
+</div>
 
